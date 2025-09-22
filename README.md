@@ -17,19 +17,6 @@ O usuário responde às perguntas e, ao enviar, recebe um feedback mostrando:
 
 ---
 
-## 📂 Estrutura do Projeto
-
-QuizFutebol/
-├── Program.cs # Lógica principal (perguntas, gabarito, endpoint de correção)
-├── wwwroot/
-│ └── index.html # Página inicial com formulário do quiz
-└── README.md # Este arquivo
-
-markdown
-Copiar código
-
----
-
 ## 🛠️ Como Rodar o Projeto
 
 1. **Instale o .NET SDK**  
