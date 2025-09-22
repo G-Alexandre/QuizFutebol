@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz de Futebol</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;max-width:900px;margin:40px auto;padding:0 16px;}
+    h1{margin-bottom:6px}
+    .info{color:#374151;margin-bottom:18px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-bottom:14px}
+    .opts label{display:block;margin:6px 0}
+    button{padding:10px 16px;border-radius:10px;border:1px solid #111827;background:#111827;color:white;cursor:pointer}
+    button:hover{opacity:.9}
+  </style>
+</head>
+<body>
+  <h1>Quiz de Futebol</h1>
+  <div class="info">Marque as alternativas e clique em <b>Enviar</b>. No final você verá o que acertou e o gabarito.</div>
+
+  <form method="post" action="/submit">
+    <div class="card">
+      <p><b>Q1.</b> Em qual país foi a final da Copa do Mundo de 2002?</p>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> Japão</label>
+        <label><input type="radio" name="q1" value="b"> Coreia do Sul</label>
+        <label><input type="radio" name="q1" value="c"> Alemanha</label>
+        <label><input type="radio" name="q1" value="d"> Brasil</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <p><b>Q2.</b> Quantos jogadores cada equipe tem em campo no futebol?</p>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> 10</label>
+        <label><input type="radio" name="q2" value="b"> 11</label>
+        <label><input type="radio" name="q2" value="c"> 12</label>
+        <label><input type="radio" name="q2" value="d"> 9</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <p><b>Q3.</b> Quem é o maior artilheiro da história das Copas do Mundo?</p>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> Pelé</label>
+        <label><input type="radio" name="q3" value="b"> Miroslav Klose</label>
+        <label><input type="radio" name="q3" value="c"> Ronaldo Fenômeno</label>
+        <label><input type="radio" name="q3" value="d"> Lionel Messi</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <p><b>Q4.</b> Quantos títulos de Copa do Mundo a Seleção Brasileira possui?</p>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="a"> 4</label>
+        <label><input type="radio" name="q4" value="b"> 5</label>
+        <label><input type="radio" name="q4" value="c"> 6</label>
+        <label><input type="radio" name="q4" value="d"> 3</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <p><b>Q5.</b> Qual é o tempo regulamentar de uma partida (descontos à parte)?</p>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="a"> 80 minutos</label>
+        <label><input type="radio" name="q5" value="b"> 100 minutos</label>
+        <label><input type="radio" name="q5" value="c"> 90 minutos</label>
+        <label><input type="radio" name="q5" value="d"> 70 minutos</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <p><b>Q6.</b> Qual destes é um cartão disciplinar no futebol?</p>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="a"> Cartão azul</label>
+        <label><input type="radio" name="q6" value="b"> Cartão verde</label>
+        <label><input type="radio" name="q6" value="c"> Cartão roxo</label>
+        <label><input type="radio" name="q6" value="d"> Cartão vermelho</label>
+      </div>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
